@@ -33,3 +33,9 @@ export function editStudent(student){
 		student
 	}
 }
+export function deleteStudent(id) {
+	return {
+		type: 'DELETE_STUDENT',
+		deleteId: id
+	}
+}

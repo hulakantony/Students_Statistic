@@ -56,6 +56,12 @@ export function students(state = initialStudents, action) {
 				} 				
 			});
 			return newState;
+		case 'DELETE_STUDENT':
+			const {deleteId} = action;			
+			let withDeleted = state.filter(el =>{				
+				return el.id !== +deleteId;
+			})
+			return withDeleted;
 		default:
 			return state;
 	}

@@ -14,7 +14,7 @@
 }
 .modal-form{
 	width: 200px;
-	height: 230px;
+	height: 260px;
 	padding: 10px;
 	border: 1px solid #ccc;
 	display: flex;
@@ -34,4 +34,19 @@
 }
 .modal-form input[readonly] {
 	background: yellow;
+}
+.modal-form button{
+	margin: 0 0 10px 0;
+}
+.confirm-modal{
+	position: fixed;
+	width: 100px;
+	height: 120px;
+	top: 100px;
+	left: calc(50% - 50px);
+	background: #fff;
+	z-index: 9999;
+	font: 12px/1 Arial,sans-serif;
+	border: 1px solid #ccc;
+	text-align: center;
 }
