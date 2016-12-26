@@ -10,6 +10,13 @@ class App extends Component{
 		super(props);
 
 	}
+	static onEnter(nextState, replace) {
+    	const login = window.localStorage.getItem('std_login')
+    	if(!login){
+    		replace('/home')
+    	}
+    	
+  	}
 	onChangeStatus(e, id){
 		const value = e.target.value;		
 		const {changeStatus} = this.props;
@@ -42,14 +49,6 @@ class App extends Component{
 		);
 	}
 }
-
-// const mapStateToProps = (state) => { 
-//     return {
-//         students: state.students,
-//         isFormOpened: state.isFormOpened,
-//         editableId: state.editableId,
-//     };
-// };
 
 const mapStateToProps = ({ students, isFormOpened, editableId }) => ({ 
 	students, isFormOpened, editableId

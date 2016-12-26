@@ -1,0 +1,14 @@
+.login-form{
+	display: flex;
+	flex-direction: column;
+	width: 200px;
+	height: 200px;
+	padding: 20px;
+	margin: 0 auto;
+}
+.login-form input{
+	margin: 0 0 10px 0;
+}
+.login-form label{
+	margin: 0 0 10px 0;
+}

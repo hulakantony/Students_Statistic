@@ -1,0 +1,24 @@
+.nav-wrapper{
+	margin: 0 auto;
+	text-align: center;
+}
+.nav-links{
+	list-style: none;
+	margin: 0 0 20px 0;
+	padding: 0;
+}
+.nav-links li{
+	display: inline-block;
+	margin-right: 10px;	
+	font: 14px/1 Arial,sans-serif;	
+	padding: 15px;
+	border-radius: 6px;
+	background: blue;
+}
+.nav-links li a{
+	text-decoration: none;
+	color: #fff;
+}
+.active{
+	font-weight: bold;
+}

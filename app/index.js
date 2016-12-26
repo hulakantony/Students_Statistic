@@ -1,14 +1,17 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import App from './containers/App';
+
 
 import { Provider } from 'react-redux';
 import configureStore from './store/configureStore';
 
+import { routes } from './routes';
+import { Router, browserHistory } from 'react-router';
+
 const store = configureStore();
 
 ReactDOM.render(<Provider store={store}>
-					<App />					
+					<Router history={browserHistory} routes={routes} /> 					
 				</Provider>, 
 	document.querySelector('.app'));
 
